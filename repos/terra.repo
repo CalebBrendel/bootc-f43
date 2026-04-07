@@ -2,5 +2,4 @@
 name=Terra
 baseurl=https://terra-repo.pages.dev/fedora-$releasever/$basearch/
 enabled=1
-gpgcheck=1
-gpgkey=https://terra-repo.pages.dev/terra.gpg
+gpgcheck=0
