@@ -108,8 +108,8 @@ jobs:
           # Syntax: https://docs.github.com/en/actions/learn-github-actions/expressions#format
           image: ${{ env.IMAGE_NAME }}
           tags: |
-            ghcr.io/${{ github.repository_owner }}/fedora:${{ github.ref_name }}
-            ghcr.io/${{ github.repository_owner }}/fedora:latest
+            ghcr.io/${{ env.OWNER_LC }}/fedora:${{ github.ref_name }}
+            ghcr.io/${{ env.OWNER_LC }}/fedora:latest
           labels: ${{ steps.metadata.outputs.labels }}
           oci: false
 
