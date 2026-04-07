@@ -1,8 +1,7 @@
 # F43 Universal Blue Image
 FROM ghcr.io/ublue-os/kinoite-main:latest
 
-RUN curl -Lo /etc/yum.repos.d/_copr_hhd-dev-hhd.repo https://copr.fedorainfracloud.org/coprs/hhd-dev/hhd/repo/fedora-40/hhd-dev-hhd-fedora-40.repo && \
-    curl -Lo /etc/yum.repos.d/terra.repo https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+COPY repos/*.repo /etc/yum.repos.d/
 
 COPY packages.txt /tmp/packages.txt
 
