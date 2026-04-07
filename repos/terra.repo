@@ -1,0 +1,6 @@
+[terra]
+name=Terra
+baseurl=https://repos.terrapkg.net/fedora-$releasever/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=https://repos.terrapkg.net/terra.gpg
